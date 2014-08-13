@@ -1997,9 +1997,7 @@ inchr getinchr()
 
 ****************************************************************************/
 
-int figlet_main(argc,argv)
-int argc;
-char *argv[];
+int figlet_main(int argc, char **argv)
 {
   inchr c,c2;
   int i;
