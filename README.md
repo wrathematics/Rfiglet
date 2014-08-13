@@ -1,7 +1,6 @@
 What is this?
 ====================================================================
-This is an R package for constructing n-grams, as well as generating new
-text based on the n-gram structure of a given text input.
+This is an R package providing access to printing via figlet.
 
 
 
@@ -12,7 +11,7 @@ devtools package, which you can get from the CRAN.  After installing that,
 you can enter
 
 library(devtools)
-install_github(username="wrathematics", repo="ngram")
+install_github("wrathematics/Rfiglet")
 
 into an R terminal to install this package.
 
