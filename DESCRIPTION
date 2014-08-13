@@ -8,5 +8,5 @@ Depends: R (>= 2.14.0)
 NeedsCompilation: yes
 ByteCompile: yes
 Author: Drew Schmidt
-Copyright: See inst/figlet_LICENSE for files in src/figlet.
+Copyright: See Rfiglet/inst/figlet_LICENSE for files in src/figlet.
 Maintainer: Drew Schmidt <wrathematics@gmail.com>

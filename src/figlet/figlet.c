@@ -432,37 +432,37 @@ int infonum;
 {
   switch (infonum) {
     case 0: /* Copyright message */
-      printf("FIGlet Copyright (C) 1991-2012 Glenn Chappell, Ian Chai, ");
-      printf("John Cowan,\nChristiaan Keet and Claudio Matsuoka\n");
-      printf("Internet: <info@figlet.org> ");
-      printf("Version: %s, date: %s\n\n",VERSION,DATE);
-      printf("FIGlet, along with the various FIGlet fonts");
-      printf(" and documentation, may be\n");
-      printf("freely copied and distributed.\n\n");
-      printf("If you use FIGlet, please send an");
-      printf(" e-mail message to <info@figlet.org>.\n\n");
-      printf("The latest version of FIGlet is available from the");
-      printf(" web site,\n\thttp://www.figlet.org/\n\n");
+      Rprintf("FIGlet Copyright (C) 1991-2012 Glenn Chappell, Ian Chai, ");
+      Rprintf("John Cowan,\nChristiaan Keet and Claudio Matsuoka\n");
+      Rprintf("Internet: <info@figlet.org> ");
+      Rprintf("Version: %s, date: %s\n\n",VERSION,DATE);
+      Rprintf("FIGlet, along with the various FIGlet fonts");
+      Rprintf(" and documentation, may be\n");
+      Rprintf("freely copied and distributed.\n\n");
+      Rprintf("If you use FIGlet, please send an");
+      Rprintf(" e-mail message to <info@figlet.org>.\n\n");
+      Rprintf("The latest version of FIGlet is available from the");
+      Rprintf(" web site,\n\thttp://www.figlet.org/\n\n");
       printusage(stdout);
       break;
     case 1: /* Version (integer) */
-      printf("%d\n",VERSION_INT);
+      Rprintf("%d\n",VERSION_INT);
       break;
     case 2: /* Font directory */
-      printf("%s\n",fontdirname);
+      Rprintf("%s\n",fontdirname);
       break;
     case 3: /* Font */
-      printf("%s\n",fontname);
+      Rprintf("%s\n",fontname);
       break;
     case 4: /* Outputwidth */
-      printf("%d\n",outputwidth);
+      Rprintf("%d\n",outputwidth);
       break;
     case 5: /* Font formats */
-      printf("%s", FONTFILEMAGICNUMBER);
+      Rprintf("%s", FONTFILEMAGICNUMBER);
 #ifdef TLF_FONTS
-      printf(" %s", TOILETFILEMAGICNUMBER);
+      Rprintf(" %s", TOILETFILEMAGICNUMBER);
 #endif
-      printf("\n");
+      Rprintf("\n");
     }
 }
 
@@ -943,6 +943,7 @@ void getparams()
   outputwidth = DEFAULTCOLUMNS;
   gn[1] = 0x80;
   gr = 1;
+  
   while ((c = getopt(Myargc,Myargv,"ADEXLRI:xlcrpntvm:w:d:f:C:NFskSWo"))!= -1) {
       /* Note: -F is not a legal option -- prints a special err message.  */
     switch (c) {
@@ -1084,11 +1085,13 @@ void getparams()
         exit(1);
         break;
       default:
-        printusage(stderr);
-        exit(1);
+        Rprintf("shouldn't happen");
+/*        printusage(stderr);*/
+/*        exit(1);*/
       }
     }
   if (optind!=Myargc) cmdinput = 1; /* force cmdinput if more arguments */
+  
   outlinelenlimit = outputwidth-1;
   if (infoprint>=0) {
     printinfo(infoprint);
@@ -1722,7 +1725,7 @@ int Agetchar()
 	if ( ++optind >= Myargc )	/* run up word count and check if at "EOF" */
 	{   /* just ran out of arguments */
 	    c = EOF;		/* return EOF */
-	    AgetMode = -1;	/* ensure all future returns return EOF */
+	    AgetMode = 0;	/* ensure all future returns return EOF */
 	}
     }
 
@@ -2013,17 +2016,21 @@ int figlet_main(int argc, char **argv)
 ---------------------------------------------------------------------------*/
   int wordbreakmode;
   int char_not_added;
-
+  
+  extern int optind;
+  optind = 1;
   Myargc = argc;
   Myargv = argv;
+  
   getparams();
+  
   readcontrolfiles();
   readfont();
   linealloc();
 
   wordbreakmode = 0;
   last_was_eol_flag = 0;
-
+  
 #ifdef TLF_FONTS
   toiletfont = 0;
 #endif
