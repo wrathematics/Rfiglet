@@ -1574,12 +1574,17 @@ outchr *string;
         }
       }
     c[size] = 0;
-    printf("%s",c);
+    Rprintf("%s",c);
 #else
-    putchar(string[i]==hardblank?' ':string[i]);
+/*    putchar(string[i]==hardblank?' ':string[i]);*/
+    if (string[i]==hardblank)
+      Rprintf(" ");
+    else
+      Rprintf("%c", string[i]);
 #endif
     }
-  putchar('\n');
+/*  putchar('\n');*/
+  Rprintf("\n");
 }
 
 
