@@ -45,7 +45,7 @@ figlet <- function(message, font="standard", smush=TRUE, fit.term=TRUE, respect.
   
   if (!smush) smusharg <- "-k"
   if (!respect.linebreaks) lbarg <- "-p"
-  if (get.os() == "windows") fit.term <- FALSE # doesn't work on Windows
+  if (get.os() == "windows" || get.os() == "darwin") fit.term <- FALSE # doesn't work on Windows
   if (fit.term) termarg <- "-t"
   
   
