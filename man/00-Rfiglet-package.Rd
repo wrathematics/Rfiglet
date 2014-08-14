@@ -6,6 +6,8 @@
 
 \description{
   R bindings for figlet.
+
+  FIGlet stands for "Frank, Ian, and Glenn's LETters".
 }
 \details{
 \tabular{ll}{
