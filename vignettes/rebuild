@@ -1,8 +1,15 @@
-#!/bin/sh
+#!/bin/bash
+
+function rebuild {
+  Rscript -e "rmarkdown::render('$1.Rmd')"
+  cp $1.Rmd ../inst/doc/
+  mv $1.html ../inst/doc/
+}
 
 ### Introducing Rfiglet
-Rscript -e "rmarkdown::render('Rfiglet.Rmd')"
+rebuild Rfiglet
 
-### 
+### Figlet Fonts
 Rscript -e "library(Rfiglet);Rfiglet:::fill_font_vignette()"
-Rscript -e "rmarkdown::render('figlet_fonts.Rmd')"
+rebuild figlet_fonts
+

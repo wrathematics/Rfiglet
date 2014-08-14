@@ -1,1 +1,2 @@
-demo    Rfiglet   Basic Rfiglet package functionality.
+basic         Rfiglet   Basic Rfiglet package functionality.
+linebreaks    Rfiglet   Showing off the respect.linebreaks argument.

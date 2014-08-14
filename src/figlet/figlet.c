@@ -4,7 +4,9 @@
   FIGlet Copyright 1996, 1997, 1998, 1999, 2000, 2001 John Cowan
   FIGlet Copyright 2002 Christiaan Keet
   FIGlet Copyright 2011, 2012 Claudio Matsuoka
+  
   Extensive modifications for compatibility with R, 2014, Schmidt
+  
   Portions written by Paul Burton and Christiaan Keet
   Internet: <info@figlet.org>
   FIGlet, along with the various FIGlet fonts and documentation, is
@@ -1563,7 +1565,7 @@ outchr *string;
       }
     if (justification>0) {
       for (i=1;(3-justification)*i+len+justification-2<outputwidth;i++) {
-        putchar(' ');
+        Rprintf(" ");//putchar(' ');
         }
       }
     }

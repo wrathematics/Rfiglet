@@ -76,7 +76,7 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 <p><em>Drew Schmidt</em> <br><br></p>
 <div id="rfiglet" class="section level1">
 <h1>Rfiglet</h1>
-<p><a href="internet">figlet</a> is a reasonably well-known utility for turning text into goofy ascii representations. For example, in the terminal, you might do something like:</p>
+<p><a href="http://www.figlet.org/">figlet</a>, which stands for “Frank, Ian, and Glenn’s LETters”, is a reasonably well-known terminal utility for generating ascii banners. For example, in the terminal, you might do something like:</p>
 <pre><code>$ echo &quot;test&quot; | figlet
  _            _   
 | |_ ___  ___| |_ 
@@ -94,7 +94,7 @@ figlet(&quot;test&quot;)</code></pre>
 | ||  __/\__ \ |_ 
  \__\___||___/\__|
                    </code></pre>
-<p>The output is a “line-by-line” vector of strings (like the output of <code>readLines()</code>) labeled as an S3 class called <code>figlet</code> for fancy printing.</p>
+<p>The output is a “line-by-line” vector of strings (like the output of <code>readLines()</code>) cast as an S3 class <code>figlet</code>, which allows for fancy printing.</p>
 <p>There are over 150 fonts available, listed in the package help. Additionally, you can see exaples from all available fontsin the <a href="figlet_fonts.html">Figlet Fonts</a> vignette.</p>
 <p>You can also do ridiculous things like this:</p>
 <pre class="r"><code>library(Rfiglet)                   

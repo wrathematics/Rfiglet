@@ -5,9 +5,8 @@
 \title{R Bindings for figlet}
 
 \description{
-  R bindings for figlet.
-
-  FIGlet stands for "Frank, Ian, and Glenn's LETters".
+  R bindings for figlet. figlet, which stands for "Frank, Ian, and 
+  Glenn's LETters", is a command line utility 
 }
 \details{
 \tabular{ll}{

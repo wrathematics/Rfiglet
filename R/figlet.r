@@ -8,7 +8,7 @@ get.os <- function()
 
 
 
-figlet <- function(message, font="standard", smush=TRUE, fit.term=TRUE, paragraph=FALSE)
+figlet <- function(message, font="standard", smush=TRUE, fit.term=TRUE, respect.linebreaks=FALSE)
 {
   fonts <- c(
         "3-d", "3x5", "4max", "5lineoblique", "acrobatic", "alligator2",
@@ -21,16 +21,16 @@ figlet <- function(message, font="standard", smush=TRUE, fit.term=TRUE, paragrap
         "cybersmall", "diamond", "digital", "doh", "doom", "dotmatrix",
         "double", "drpepper", "eftifont", "eftipiti", "eftirobot",
         "eftitalic", "eftiwall", "epic", "fender", "fourtops", "fraktur",
-        "fuzzy", "goofy", "gothic", "gradient", "graffiti", "hex", 
-        "hollywood", "invita", "isometric1", "isometric2", "isometric3", 
+        "fuzzy", "goofy", "gothic", "gradient", "graffiti", "hex",
+        "hollywood", "invita", "isometric1", "isometric2", "isometric3",
         "isometric4", "italic", "ivrit", "jazmine", "jerusalem", "katakana",
         "kban", "keyboard", "larry3d", "lcd", "lean", "linux", "lockergnome",
         "madrid", "marquee", "mike", "mini", "mirror", "mnemonic", "morse",
         "moscow", "nancyj-fancy", "nancyj", "nancyj-improved",
         "nancyj-underline", "nipples", "ntgreek", "o8", "ogre", "oldbanner",
-        "os2", "pawp", "peaks", "pebbles", "pepper", "poison", "puffy", 
-        "pyramid", "rectangles", "rev", "roman", "rot13", "rounded", 
-        "rowancap", "rozzo", "runic", "sblood", "script", "serifcap", 
+        "os2", "pawp", "peaks", "pebbles", "pepper", "poison", "puffy",
+        "pyramid", "rectangles", "rev", "roman", "rot13", "rounded",
+        "rowancap", "rozzo", "runic", "sblood", "script", "serifcap",
         "shadow", "shimrod", "short", "slant", "slide", "slscript", "small",
         "smisome1", "smkeyboard", "smpoison", "smscript", "smshadow",
         "smslant", "speed", "s-relief", "stacey", "stampatello", "standard",
@@ -44,18 +44,16 @@ figlet <- function(message, font="standard", smush=TRUE, fit.term=TRUE, paragrap
   fontdir <- tools::file_path_as_absolute(system.file("fonts", package="Rfiglet"))
   
   if (!smush) smusharg <- "-k"
-  
+  if (!respect.linebreaks) lbarg <- "-p"
   if (get.os() == "windows") fit.term <- FALSE # doesn't work on Windows
   if (fit.term) termarg <- "-t"
-  
-  args <- paste(smush, fit.term)
-  args <- sub(x=args, pattern="^(\\s)?", replacement="")
   
   
   ### This is exactly what it looks like.
   argv <- c("./figlet", #"-c",
             if (!smush) smusharg, 
             if (fit.term) termarg, 
+            if (!respect.linebreaks) lbarg,
             "-d", fontdir,
             "-f", font, 
             as.character(message))

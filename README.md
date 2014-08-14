@@ -1,8 +1,8 @@
 What is this?
 ====================================================================
-This is an R package providing access to printing via figlet.
-
-This offers you the deeply necessary:
+This is an R package providing access to printing via figlet.  This
+is an AMAZING new feature that will REVOLUTIONIZE the way users
+interact with R.  Behold:
 
 ```
 > library(Rfiglet)

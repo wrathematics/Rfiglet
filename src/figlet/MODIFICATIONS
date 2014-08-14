@@ -1,5 +1,12 @@
+This distribution of figlet is highly modified, and is no longer
+appropriate for use as a command line utility.  The original figlet
+source is available here:
+
 https://github.com/cmatsuoka/figlet
 
-figlet.c: 
-  * commented line 1549
-  * changed main() function to figlet_main() at line 1995
+Numerous and significant changes were made to figlet.c:
+  * Changed `main()` to `figlet_main()`.
+  * Removed all calls to exit, fprintf, printf, and putchar.
+  * Always reset optind to 1.
+  * Probably other things that I don't remember.
+
