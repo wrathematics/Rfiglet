@@ -5,4 +5,4 @@
 *.status
 *~
 *.swp
-
+*.Rhistory
