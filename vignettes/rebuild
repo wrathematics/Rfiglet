@@ -1,0 +1,8 @@
+#!/bin/sh
+
+### Introducing Rfiglet
+Rscript -e "rmarkdown::render('Rfiglet.Rmd')"
+
+### 
+Rscript -e "library(Rfiglet);Rfiglet:::fill_font_vignette()"
+Rscript -e "rmarkdown::render('figlet_fonts.Rmd')"

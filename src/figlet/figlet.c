@@ -4,6 +4,7 @@
   FIGlet Copyright 1996, 1997, 1998, 1999, 2000, 2001 John Cowan
   FIGlet Copyright 2002 Christiaan Keet
   FIGlet Copyright 2011, 2012 Claudio Matsuoka
+  Extensive modifications for compatibility with R, 2014, Schmidt
   Portions written by Paul Burton and Christiaan Keet
   Internet: <info@figlet.org>
   FIGlet, along with the various FIGlet fonts and documentation, is
@@ -290,8 +291,8 @@ int size;
 #endif
 
   if ((ptr = (char*)malloc(size))==NULL) {
-    fprintf(stderr,"%s: Out of memory\n",myname);
-    exit(1);
+/*    fprintf(stderr,"%s: Out of memory\n",myname);*/
+/*    exit(1);*/
     }
   else {
     return ptr;
@@ -409,12 +410,12 @@ ZFILE *fp;
 void printusage(out)
 FILE *out;
 {
-  fprintf(out,
+  Rprintf(
     "Usage: %s [ -cklnoprstvxDELNRSWX ] [ -d fontdirectory ]\n",
     myname);
-  fprintf(out,
+  Rprintf(
     "              [ -f fontfile ] [ -m smushmode ] [ -w outputwidth ]\n");
-  fprintf(out,
+  Rprintf(
     "              [ -C controlfile ] [ -I infocode ] [ message ]\n");
 }
 
@@ -443,7 +444,7 @@ int infonum;
       Rprintf(" e-mail message to <info@figlet.org>.\n\n");
       Rprintf("The latest version of FIGlet is available from the");
       Rprintf(" web site,\n\thttp://www.figlet.org/\n\n");
-      printusage(stdout);
+/*      printusage(stdout);*/
       break;
     case 1: /* Version (integer) */
       Rprintf("%d\n",VERSION_INT);
@@ -747,9 +748,9 @@ char *controlname;
   controlfile = FIGopen(controlname,CONTROLFILESUFFIX);
 
   if (controlfile==NULL) {
-    fprintf(stderr,"%s: %s: Unable to open control file\n",myname,
-      controlname);
-    exit(1);
+/*    fprintf(stderr,"%s: %s: Unable to open control file\n",myname,*/
+/*      controlname);*/
+/*    exit(1);*/
     }
 
   (*commandlistend) = (comnode*)myalloc(sizeof(comnode));
@@ -1009,7 +1010,7 @@ void getparams()
           outputwidth = columns;
           }
 #else /* ifdef TIOCGWINSZ */
-        fprintf(stderr,
+        Rprintf(
           "%s: \"-t\" is disabled, since ioctl is not fully implemented.\n",
           myname);
 #endif /* ifdef TIOCGWINSZ */
@@ -1072,17 +1073,17 @@ void getparams()
         gr = 1;
         break;
       case 'F': /* Not a legal option */
-        fprintf(stderr,"%s: illegal option -- F\n",myname);
-        printusage(stderr);
-        fprintf(stderr,"\nBecause of numerous incompatibilities, the");
-        fprintf(stderr," \"-F\" option has been\n");
-        fprintf(stderr,"removed.  It has been replaced by the \"figlist\"");
-        fprintf(stderr," program, which is now\n");
-        fprintf(stderr,"included in the basic FIGlet package.  \"figlist\"");
-        fprintf(stderr," is also available\n");
-        fprintf(stderr,"from  http://www.figlet.org/");
-        fprintf(stderr,"under UNIX utilities.\n");
-        exit(1);
+/*        fprintf(stderr,"%s: illegal option -- F\n",myname);*/
+/*        printusage(stderr);*/
+/*        fprintf(stderr,"\nBecause of numerous incompatibilities, the");*/
+/*        fprintf(stderr," \"-F\" option has been\n");*/
+/*        fprintf(stderr,"removed.  It has been replaced by the \"figlist\"");*/
+/*        fprintf(stderr," program, which is now\n");*/
+/*        fprintf(stderr,"included in the basic FIGlet package.  \"figlist\"");*/
+/*        fprintf(stderr," is also available\n");*/
+/*        fprintf(stderr,"from  http://www.figlet.org/");*/
+/*        fprintf(stderr,"under UNIX utilities.\n");*/
+/*        exit(1);*/
         break;
       default:
         Rprintf("shouldn't happen");
@@ -1095,7 +1096,7 @@ void getparams()
   outlinelenlimit = outputwidth-1;
   if (infoprint>=0) {
     printinfo(infoprint);
-    exit(0);
+/*    exit(0);*/
     }
 }
 
@@ -1197,8 +1198,8 @@ void readfont()
 #endif
 
   if (fontfile==NULL) {
-    fprintf(stderr,"%s: %s: Unable to open font file\n",myname,fontname);
-    exit(1);
+/*    fprintf(stderr,"%s: %s: Unable to open font file\n",myname,fontname);*/
+/*    exit(1);*/
     }
 
   readmagic(fontfile,magicnum);
@@ -1213,8 +1214,8 @@ void readfont()
     &ffright2left,&smush2);
 
   if (maxlen > MAXLEN) {
-    fprintf(stderr,"%s: %s: character is too wide\n",myname,fontname);
-    exit(1);
+    Rprintf("%s: %s: character is too wide\n",myname,fontname);
+/*    exit(1);*/
     }
 #ifdef TLF_FONTS
   if ((!toiletfont && strcmp(magicnum,FONTFILEMAGICNUMBER)) ||
@@ -1222,8 +1223,8 @@ void readfont()
 #else
   if (strcmp(magicnum,FONTFILEMAGICNUMBER) || numsread<5) {
 #endif
-    fprintf(stderr,"%s: %s: Not a FIGlet 2 font file\n",myname,fontname);
-    exit(1);
+/*    fprintf(stderr,"%s: %s: Not a FIGlet 2 font file\n",myname,fontname);*/
+/*    exit(1);*/
     }
   for (i=1;i<=cmtlines;i++) {
     skiptoeol(fontfile);

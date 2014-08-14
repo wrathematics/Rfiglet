@@ -1,7 +1,7 @@
 #######################################################
 PKG_CFLAGS = -w -g
 
-FIGLET_OBJS = figlet/figlet.o figlet/zipio.o figlet/crc.o figlet/inflate.o figlet/utf8.o figlet/gnu_getopt.o
+FIGLET_OBJS = figlet/figlet.o figlet/zipio.o figlet/crc.o figlet/inflate.o figlet/utf8.o
 R_OBJS = wrappers.o
 
 OBJECTS = $(R_OBJS) $(FIGLET_OBJS)
