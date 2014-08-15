@@ -7,6 +7,7 @@ Description: figlet is a reasonably well-known command line utility
         bindings for the figlet library.
 License: BSD 2-clause License + file LICENSE
 Depends: R (>= 2.14.0)
+Suggests: shiny
 NeedsCompilation: yes
 ByteCompile: yes
 LazyLoad: yes

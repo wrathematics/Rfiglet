@@ -1,2 +1,3 @@
 basic         Rfiglet   Basic Rfiglet package functionality.
 linebreaks    Rfiglet   Showing off the respect.linebreaks argument.
+faas          Rfiglet   The 'Figlet as a Service' shiny app.
