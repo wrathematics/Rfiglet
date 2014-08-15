@@ -28,7 +28,8 @@ figlet(message, font="standard", smush=TRUE, fit.term=TRUE,
   or "normal" (FALSE).}
   \item{fit.term}{logical; if \code{TRUE}, then the printing will fit your
   terminal width, and otherwise will assume 80 columns.  In gui's like 
-  RStudio, this will probably do nothing.}
+  RStudio, this will probably do nothing. Does not work on Windows or
+  Mac.}
   \item{respect.linebreaks}{logical; if \code{TRUE}, then linebreaks
   will be printed as linebreaks, and otherwise as spaces.}
   \item{x}{A \code{figlet} object (output of the \code{figlet()} function).}
