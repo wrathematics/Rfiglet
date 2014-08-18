@@ -2,8 +2,7 @@ library(shiny)
 library(Rfiglet)
 
 
-about.faas <- 
-HTML("
+about.faas <- HTML("
   <p>
   This 
   <a href='http://www.rstudio.com/products/shiny/'>shiny</a> 
@@ -12,7 +11,8 @@ HTML("
   The 
   <a href='https://github.com/wrathematics/Rfiglet/tree/master/inst/ShinyApps/faas'>source</a>
   for this shiny app is available in the Rfiglet package as a demo, which you
-  can execute by calling: <pre>demo('faas', 'Rfiglet')</pre>
+  can execute by calling: 
+  <pre>demo('faas', 'Rfiglet')</pre>
   
   <br>
   
@@ -32,7 +32,7 @@ shinyUI(
       
     mainPanel(
       tabsetPanel(
-        tabPanel("Banner", verbatimTextOutput("banner")),
+        tabPanel("ASCII", verbatimTextOutput("banner")),
         tabPanel("About", helpText(about.faas))
       )
     )
