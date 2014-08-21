@@ -4,7 +4,7 @@ This is an R package providing access to printing via figlet.  This
 is an AMAZING new feature that will REVOLUTIONIZE the way users
 interact with R.  Behold:
 
-```
+```r
 > library(Rfiglet)
 > figlet("Fancy Printing")
  _____                        ____       _       _   _             
@@ -23,8 +23,10 @@ To install the package from github, I recommend using Hadley Wickham's
 devtools package, which you can get from the CRAN.  After installing that,
 you can enter
 
+```r
 library(devtools)
-install_github("wrathematics/Rfiglet")
+devtools::install_github("wrathematics/Rfiglet")
+```
 
 into an R terminal to install this package.
 
