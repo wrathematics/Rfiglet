@@ -5,7 +5,7 @@
   FIGlet Copyright 2002 Christiaan Keet
   FIGlet Copyright 2011, 2012 Claudio Matsuoka
   
-  Extensive modifications for compatibility with R, 2014, Schmidt
+  Extensive modifications for compatibility with R, 2014-2015, Schmidt
   
   Portions written by Paul Burton and Christiaan Keet
   Internet: <info@figlet.org>
@@ -54,7 +54,20 @@
     DEFAULTFONTDIR.
 ---------------------------------------------------------------------------*/
 
+// Fixes for modern compilers deprecating alloca
+// "portability"
+#define OS_WINDOWS (defined(__WIN32) || defined(__WIN32__) || defined(_WIN64) || defined(__WIN64) || defined(__WIN64__) || defined(__TOS_WIN__) || defined(__WINNT) || defined(__WINNT__))
+
+#if OS_WINDOWS
+#include <malloc.h>
+#define alloca _alloca
+#else
 #include <alloca.h>
+#endif
+
+
+
+
 
 #ifndef DEFAULTFONTDIR
 #define DEFAULTFONTDIR "fonts"
