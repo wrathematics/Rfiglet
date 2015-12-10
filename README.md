@@ -1,8 +1,12 @@
 # Rfiglet
 
-This is an R package providing access to printing via figlet.  This
-is an AMAZING new feature that will REVOLUTIONIZE the way users
-interact with R.  Behold:
+* **Version:** 1.0-0
+* **Status:** [![Build Status](https://travis-ci.org/wrathematics/Rfiglet.png)](https://travis-ci.org/wrathematics/Rfiglet)
+* **License:** [![License](http://img.shields.io/badge/license-BSD%202--Clause-orange.svg?style=flat)](http://opensource.org/licenses/BSD-2-Clause)
+* **Author:** Drew Schmidt
+
+
+This is an R package providing access to printing via figlet.  This is an AMAZING new feature that will REVOLUTIONIZE the way users interact with R.  Behold:
 
 ```r
 library(Rfiglet)
@@ -16,7 +20,8 @@ figlet("Fancy Printing")
 ```
 
 
-## Package Usage
+
+## Example Usage
 
 To use the package, just load with `library(Rfiglet)` and then
 use `figlet("whatever")`.
@@ -62,29 +67,6 @@ See also the two package vignettes for more information.
 
 ## Installation
 
-To install the package from github, I recommend using Hadley Wickham's
-devtools package, which you can get from the CRAN.  After installing that,
-you can enter
-
 ```r
 devtools::install_github("wrathematics/Rfiglet")
 ```
-
-into an R terminal to install this package.
-
-
-
-## Software license and disclaimer
-
-This package is licensed under the permissive 2-clause BSD license.
-You can find a quick summary of the license here:
-
-https://tldrlegal.com/license/bsd-2-clause-license-%28freebsd%29
-
-The full terms of the license (it's very short) are contained in the
-LICENSE file in the root directory of the project.
-
-figlet itself is licensed under the 3-clause BSD license.  You can
-find a copy of this license in `Rfiglet/inst/figlet_LICENSE` and
-`Rfiglet/src/figlet/LICENSE`.
-
