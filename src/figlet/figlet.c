@@ -53,6 +53,9 @@
     used). This file should reside in the directory specified by
     DEFAULTFONTDIR.
 ---------------------------------------------------------------------------*/
+
+#include <alloca.h>
+
 #ifndef DEFAULTFONTDIR
 #define DEFAULTFONTDIR "fonts"
 #endif
