@@ -4,7 +4,7 @@
 \alias{figlet}
 \title{Printing via figlet}
 \usage{
-figlet(message, font = "standard", smush = TRUE, fit.term = TRUE,
+figlet(message, font = "standard", smush = TRUE,
   respect.linebreaks = FALSE)
 }
 \arguments{
@@ -14,10 +14,6 @@ figlet(message, font = "standard", smush = TRUE, fit.term = TRUE,
 
 \item{smush}{logical; whether or not the kerning should be "extreme" (TRUE)
 or "normal" (FALSE).}
-
-\item{fit.term}{logical; if \code{TRUE}, then the printing will fit your
-terminal width, and otherwise will assume 80 columns.  In gui's like
-RStudio, this will probably do nothing. Does not work on Windows or Mac.}
 
 \item{respect.linebreaks}{logical; if \code{TRUE}, then linebreaks will be
 printed as linebreaks, and otherwise as spaces.}
