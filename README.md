@@ -66,6 +66,18 @@ See also the two package vignettes for more information.
 
 
 
+## Shiny App
+
+There is also a shiny app bundled with Rfiglet.  This revolutionary piece of amazing technology allows you to make your annoying ascii banners in real time by running "Figlet as a Service", or "faas".  To run faas, enter:
+
+```r
+Rfiglet::faas()
+```
+
+into your R session.
+
+
+
 
 ## Installation
 

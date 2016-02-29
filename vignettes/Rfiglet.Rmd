@@ -34,6 +34,7 @@ header
 ```
 
 
+# Introduction
 
 [figlet](http://www.figlet.org/), which stands for "Frank, Ian, and Glenn's LETters", is a well-known terminal utility for generating ascii banners.  For example, in the terminal, you might do something like:
 
@@ -55,10 +56,54 @@ library(Rfiglet)
 figlet("test")
 ```
 
-The output is a "line-by-line" vector of strings (like the output of `readLines()`) cast as an S3 class `figlet`, which allows for fancy printing.
+
+
+
+
+# Installation
+
+You can install the stable version from CRAN using the usual `install.packages()`:
+
+```r
+install.packages("Rfiglet")
+```
+
+The development version is maintained on GitHub, and can easily be installed by any of the packages that offer installations from GitHub:
+
+```r
+### Pick your preference
+devtools::install_github("wrathematics/Rfiglet")
+ghit::install_github("wrathematics/Rfiglet")
+remotes::install_github("wrathematics/Rfiglet")
+```
+
+
+
+
+
+# Font Selection
 
 There are over 150 fonts available, listed in the package help.
 Additionally, you can see exaples from all available fonts in the *Figlet Font Showcase* vignette which also ships with the **Rfiglet** package.
+
+Finally, there is a bundled shiny app "Figlet as a Service" (faas), which allows you to quickly see some text figlet-ized.  You can run it by entering
+
+```r
+Rfiglet::faas()
+```
+
+Note that this requires you have the shiny package available.
+
+
+
+
+
+# Details
+
+Printing is handled by a highly modified version of the figlet command line utility.  If you know a thing or two about R calling C functions, have a look at the R source code for the `Rfiglet::figlet()` function for a laugh.
+
+The output is a "line-by-line" vector of strings (like the output of `readLines()`) cast as an S3 class `figlet`, which allows for fancy printing.
+
 
 
 
