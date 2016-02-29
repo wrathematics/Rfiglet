@@ -10,6 +10,6 @@ function rebuild {
 rebuild Rfiglet
 
 ### Figlet Fonts
-Rscript -e "library(Rfiglet);Rfiglet:::fill_font_vignette()"
+#Rscript -e "library(Rfiglet);Rfiglet:::fill_font_vignette()"
 rebuild figlet_fonts
 
