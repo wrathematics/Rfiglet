@@ -1,4 +1,4 @@
-Release 1.0:
-    * Created package.
-    * Integrated figlet into R.
-
+Release 1.0-0:
+	* Created package.
+	* Integrated figlet into R.
+  * Created basic package vignette and a font demonstration vignette.

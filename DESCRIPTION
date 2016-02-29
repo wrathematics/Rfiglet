@@ -2,23 +2,28 @@ Package: Rfiglet
 Type: Package
 Title: R Bindings for figlet
 Version: 1.0-0
-Description: figlet is a reasonably well-known command line utility
-    for producing ascii logos.  The Rfiglet package provides
-    bindings for the figlet library.
+Description: 'figlet' is a well-known command line utility
+    for producing ascii logos.  The 'Rfiglet' package provides
+    bindings for the figlet library to R.  Over 150 fonts are 
+    available, documented in the help as well as in a demonstration
+    vignette.
 License: BSD 2-clause License + file LICENSE
+Copyright: See Rfiglet/inst/figlet_LICENSE for files in src/figlet.
 Depends:
     R (>= 2.14.0)
 Imports: 
     utils
-Suggests:
-    shiny
+Suggests: 
+    shiny,
+    knitr, 
+    rmarkdown
+VignetteBuilder: knitr
 NeedsCompilation: yes
 ByteCompile: yes
 LazyLoad: yes
 LazyData: yes
-Author: Drew Schmidt
-Copyright: See Rfiglet/inst/figlet_LICENSE for files in src/figlet.
-Maintainer: Drew Schmidt <wrathematics@gmail.com>
+Authors@R: c(person("Drew", "Schmidt", role=c("aut", "cre")))
 URL: https://github.com/wrathematics/Rfiglet
 BugReports: https://github.com/wrathematics/Rfiglet/issues
+Maintainer: Drew Schmidt <wrathematics@gmail.com>
 RoxygenNote: 5.0.1
