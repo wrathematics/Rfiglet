@@ -1,13 +1,3 @@
-get.os <- function()
-{
-  ret <- tolower(Sys.info()["sysname"])
-  names(ret) <- NULL
-  
-  return(ret)
-}
-
-
-
 ### error checking for the lazy man
 must.be <- function(x, type)
 {
