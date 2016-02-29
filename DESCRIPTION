@@ -22,7 +22,8 @@ NeedsCompilation: yes
 ByteCompile: yes
 LazyLoad: yes
 LazyData: yes
-Authors@R: c(person("Drew", "Schmidt", role=c("aut", "cre")))
+Authors@R: c(person("Drew", "Schmidt", role=c("aut", "cre"),
+    email="wrathematics@gmail.com"))
 URL: https://github.com/wrathematics/Rfiglet
 BugReports: https://github.com/wrathematics/Rfiglet/issues
 Maintainer: Drew Schmidt <wrathematics@gmail.com>
