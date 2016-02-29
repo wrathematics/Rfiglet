@@ -1,12 +1,11 @@
 Package: Rfiglet
 Type: Package
-Title: R Bindings for figlet
+Title: R Bindings for 'figlet'
 Version: 1.0-0
-Description: 'figlet' is a well-known command line utility
-    for producing ascii logos.  The 'Rfiglet' package provides
-    bindings for the figlet library to R.  Over 150 fonts are 
-    available, documented in the help as well as in a demonstration
-    vignette.
+Description: A set of utilities for creating 'ascii' logos from R.
+    We do so by providing bindings to a heavily modified version
+    of the 'figlet' program.  Over 150 fonts are available, documented
+    in the help as well as in a demonstration vignette.
 License: BSD 2-clause License + file LICENSE
 Copyright: See Rfiglet/inst/figlet_LICENSE for files in src/figlet.
 Depends:
