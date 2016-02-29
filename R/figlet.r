@@ -22,9 +22,6 @@
 #' figlet("abacabb")
 #' }
 #' 
-#' @useDynLib Rfiglet R_figlet_main
-#' @importFrom utils capture.output
-#' 
 #' @export
 figlet <- function(message, font="standard", smush=TRUE, respect.linebreaks=FALSE)
 {

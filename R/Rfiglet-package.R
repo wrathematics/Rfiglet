@@ -9,6 +9,11 @@
 #'   License: \tab 2-clause BSD\cr
 #' }
 #' 
+#' @useDynLib Rfiglet R_figlet_main
+#' 
+#' @importFrom utils capture.output
+#' @importFrom tools file_path_as_absolute
+#' 
 #' @name Rfiglet-package
 #' @docType package
 #' @author Drew Schmidt \email{wrathematics AT gmail.com}
