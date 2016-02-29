@@ -2,8 +2,8 @@
 
 function rebuild {
   Rscript -e "rmarkdown::render('$1.Rmd')"
-  cp $1.Rmd ../inst/doc/
-  mv $1.html ../inst/doc/
+#  cp $1.Rmd ../inst/doc/
+#  mv $1.html ../inst/doc/
 }
 
 ### Introducing Rfiglet
