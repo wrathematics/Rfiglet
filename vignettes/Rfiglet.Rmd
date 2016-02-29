@@ -1,7 +1,18 @@
-<!--
-%\VignetteEngine{knitr}
-%\VignetteIndexEntry{Introducing Rfiglet}
--->
+---
+title: "Introducing Rfiglet"
+author: "Drew Schmidt"
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    fig_caption: true
+    toc: false
+    number_sections: false
+    css: include/custom.css
+    highlight: kate
+vignette: >
+  %\VignetteIndexEntry{Introducing Rfiglet}
+  %\VignetteEngine{knitr::rmarkdown}
+---
 
 ```{r, echo = FALSE, message = FALSE}
 library(Rfiglet)
@@ -22,12 +33,9 @@ class(header) <- "figlet"
 header
 ```
 
-*Drew Schmidt* 
-<br><br>
 
-# Rfiglet
 
-[figlet](http://www.figlet.org/), which stands for "Frank, Ian, and Glenn's LETters", is a reasonably well-known terminal utility for generating ascii banners.  For example, in the terminal, you might do something like:
+[figlet](http://www.figlet.org/), which stands for "Frank, Ian, and Glenn's LETters", is a well-known terminal utility for generating ascii banners.  For example, in the terminal, you might do something like:
 
 ```
 $ echo "test" | figlet
@@ -39,7 +47,7 @@ $ echo "test" | figlet
                   
 ```
 
-The [Rfiglet](github) package is a set of bindings for using figlet from R.
+The **Rfiglet** package is a set of bindings for using figlet from R.
 
 ```{r}
 library(Rfiglet)
@@ -50,18 +58,12 @@ figlet("test")
 The output is a "line-by-line" vector of strings (like the output of `readLines()`) cast as an S3 class `figlet`, which allows for fancy printing.
 
 There are over 150 fonts available, listed in the package help.
-Additionally, you can see exaples from all available fontsin the [Figlet Fonts](figlet_fonts.html) vignette.
+Additionally, you can see exaples from all available fonts in the *Figlet Font Showcase* vignette which also ships with the **Rfiglet** package.
 
-You can also do ridiculous things like this:
-
-```{r}
-library(Rfiglet)                   
-figlet(figlet("test"))
-```
 
 
 
 <br><br><br>
-![Creative Commons License](cc.png "Creative Commons License")
+![Creative Commons License](include/cc.png "Creative Commons License")
 
 This work is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/)

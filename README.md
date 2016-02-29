@@ -1,6 +1,7 @@
 # Rfiglet
 
 * **Version:** 1.0-0
+* **URL**: https://github.com/wrathematics/Rfiglet
 * **Status:** [![Build Status](https://travis-ci.org/wrathematics/Rfiglet.png)](https://travis-ci.org/wrathematics/Rfiglet)
 * **License:** [![License](http://img.shields.io/badge/license-BSD%202--Clause-orange.svg?style=flat)](http://opensource.org/licenses/BSD-2-Clause)
 * **Author:** Drew Schmidt
@@ -9,8 +10,7 @@
 This is an R package providing access to printing via figlet.  This is an AMAZING new feature that will REVOLUTIONIZE the way users interact with R.  Behold:
 
 ```r
-library(Rfiglet)
-figlet("Fancy Printing")
+Rfiglet::figlet("Fancy Printing")
 #  _____                        ____       _       _   _             
 # |  ___|_ _ _ __   ___ _   _  |  _ \ _ __(_)_ __ | |_(_)_ __   __ _ 
 # | |_ / _` | '_ \ / __| | | | | |_) | '__| | '_ \| __| | '_ \ / _` |
@@ -65,8 +65,27 @@ See also the two package vignettes for more information.
 
 
 
+
+
 ## Installation
 
+You can install the stable version from CRAN using the usual `install.packages()`:
+
 ```r
-devtools::install_github("wrathematics/Rfiglet")
+install.packages("Rfiglet")
 ```
+
+The development version is maintained on GitHub, and can easily be installed by any of the packages that offer installations from GitHub:
+
+```r
+### Pick your preference
+devtools::install_github("wrathematics/Rfiglet")
+ghit::install_github("wrathematics/Rfiglet")
+remotes::install_github("wrathematics/Rfiglet")
+```
+
+
+
+## Acknowledgements
+
+The internal printing is handled by a modified version of the command line figlet.

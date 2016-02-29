@@ -1,11 +1,18 @@
-
-<!--
-%\VignetteEngine{knitr}
-%\VignetteIndexEntry{Figlet Fonts}
--->
-
-<!-- auto-generated, do not edit -->
-
+---
+title: "Figlet Font Showcase"
+author: "Drew Schmidt"
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    fig_caption: true
+    toc: true
+    number_sections: false
+    css: include/custom.css
+    highlight: kate
+vignette: >
+  %\VignetteIndexEntry{Figlet Font Showcase}
+  %\VignetteEngine{knitr::rmarkdown}
+---
 
 ```{r, echo = FALSE, message = FALSE}
 library(Rfiglet)
@@ -14,1594 +21,1579 @@ knitr::opts_chunk$set(
   comment = NA,
   error   = FALSE,
   tidy    = FALSE)
+
+message <- "An Example"
+
+# header <- c(figlet("Figlet"), figlet("Fonts"))
+# class(header) <- "figlet"
+# 
+# header
 ```
-
-
-```{r, echo=FALSE}
-library(Rfiglet)
-
-header <- c(figlet("Figlet"), figlet("Fonts"))
-class(header) <- "figlet"
-
-header
-```
-
-*Drew Schmidt*
-
-This vignette contains examples of all available fonts for use with
-the Rfiglet package.  For a description of the package, see the
-[Introducing Rfiglet](Rfiglet.html) vignette.
-
-The body of this vignette is automatically generated via
-`fill_font_vignette()` in `Rfiglet/R/figlet_fonts_vignette.r`,
-together with knitr.
-
-<br><br>
 
   
-# Font = "3-d"
+# "3-d"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="3-d")
+figlet(message, font="3-d")
 ```
 
 
 
-# Font = "3x5"
+# "3x5"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="3x5")
+figlet(message, font="3x5")
 ```
 
 
 
-# Font = "4max"
+# "4max"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="4max")
+figlet(message, font="4max")
 ```
 
 
 
-# Font = "5lineoblique"
+# "5lineoblique"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="5lineoblique")
+figlet(message, font="5lineoblique")
 ```
 
 
 
-# Font = "acrobatic"
+# "acrobatic"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="acrobatic")
+figlet(message, font="acrobatic")
 ```
 
 
 
-# Font = "alligator2"
+# "alligator2"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="alligator2")
+figlet(message, font="alligator2")
 ```
 
 
 
-# Font = "alligator"
+# "alligator"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="alligator")
+figlet(message, font="alligator")
 ```
 
 
 
-# Font = "alphabet"
+# "alphabet"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="alphabet")
+figlet(message, font="alphabet")
 ```
 
 
 
-# Font = "arrows"
+# "arrows"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="arrows")
+figlet(message, font="arrows")
 ```
 
 
 
-# Font = "avatar"
+# "avatar"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="avatar")
+figlet(message, font="avatar")
 ```
 
 
 
-# Font = "B1FF"
+# "B1FF"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="B1FF")
+figlet(message, font="B1FF")
 ```
 
 
 
-# Font = "banner3-D"
+# "banner3-D"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="banner3-D")
+figlet(message, font="banner3-D")
 ```
 
 
 
-# Font = "banner3"
+# "banner3"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="banner3")
+figlet(message, font="banner3")
 ```
 
 
 
-# Font = "banner4"
+# "banner4"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="banner4")
+figlet(message, font="banner4")
 ```
 
 
 
-# Font = "banner"
+# "banner"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="banner")
+figlet(message, font="banner")
 ```
 
 
 
-# Font = "barbwire"
+# "barbwire"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="barbwire")
+figlet(message, font="barbwire")
 ```
 
 
 
-# Font = "basic"
+# "basic"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="basic")
+figlet(message, font="basic")
 ```
 
 
 
-# Font = "bell"
+# "bell"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="bell")
+figlet(message, font="bell")
 ```
 
 
 
-# Font = "bigchief"
+# "bigchief"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="bigchief")
+figlet(message, font="bigchief")
 ```
 
 
 
-# Font = "bigfig"
+# "bigfig"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="bigfig")
+figlet(message, font="bigfig")
 ```
 
 
 
-# Font = "big"
+# "big"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="big")
+figlet(message, font="big")
 ```
 
 
 
-# Font = "binary"
+# "binary"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="binary")
+figlet(message, font="binary")
 ```
 
 
 
-# Font = "block"
+# "block"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="block")
+figlet(message, font="block")
 ```
 
 
 
-# Font = "bolger"
+# "bolger"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="bolger")
+figlet(message, font="bolger")
 ```
 
 
 
-# Font = "bright"
+# "bright"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="bright")
+figlet(message, font="bright")
 ```
 
 
 
-# Font = "broadway"
+# "broadway"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="broadway")
+figlet(message, font="broadway")
 ```
 
 
 
-# Font = "bubble"
+# "bubble"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="bubble")
+figlet(message, font="bubble")
 ```
 
 
 
-# Font = "bulbhead"
+# "bulbhead"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="bulbhead")
+figlet(message, font="bulbhead")
 ```
 
 
 
-# Font = "calgphy2"
+# "calgphy2"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="calgphy2")
+figlet(message, font="calgphy2")
 ```
 
 
 
-# Font = "caligraphy"
+# "caligraphy"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="caligraphy")
+figlet(message, font="caligraphy")
 ```
 
 
 
-# Font = "catwalk"
+# "catwalk"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="catwalk")
+figlet(message, font="catwalk")
 ```
 
 
 
-# Font = "chunky"
+# "chunky"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="chunky")
+figlet(message, font="chunky")
 ```
 
 
 
-# Font = "coinstak"
+# "coinstak"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="coinstak")
+figlet(message, font="coinstak")
 ```
 
 
 
-# Font = "colossal"
+# "colossal"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="colossal")
+figlet(message, font="colossal")
 ```
 
 
 
-# Font = "computer"
+# "computer"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="computer")
+figlet(message, font="computer")
 ```
 
 
 
-# Font = "contessa"
+# "contessa"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="contessa")
+figlet(message, font="contessa")
 ```
 
 
 
-# Font = "contrast"
+# "contrast"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="contrast")
+figlet(message, font="contrast")
 ```
 
 
 
-# Font = "cosmic"
+# "cosmic"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="cosmic")
+figlet(message, font="cosmic")
 ```
 
 
 
-# Font = "crawford"
+# "crawford"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="crawford")
+figlet(message, font="crawford")
 ```
 
 
 
-# Font = "cyberlarge"
+# "cyberlarge"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="cyberlarge")
+figlet(message, font="cyberlarge")
 ```
 
 
 
-# Font = "cybermedium"
+# "cybermedium"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="cybermedium")
+figlet(message, font="cybermedium")
 ```
 
 
 
-# Font = "cybersmall"
+# "cybersmall"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="cybersmall")
+figlet(message, font="cybersmall")
 ```
 
 
 
-# Font = "diamond"
+# "diamond"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="diamond")
+figlet(message, font="diamond")
 ```
 
 
 
-# Font = "digital"
+# "digital"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="digital")
+figlet(message, font="digital")
 ```
 
 
 
-# Font = "doh"
+# "doh"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="doh")
+figlet(message, font="doh")
 ```
 
 
 
-# Font = "doom"
+# "doom"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="doom")
+figlet(message, font="doom")
 ```
 
 
 
-# Font = "dotmatrix"
+# "dotmatrix"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="dotmatrix")
+figlet(message, font="dotmatrix")
 ```
 
 
 
-# Font = "double"
+# "double"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="double")
+figlet(message, font="double")
 ```
 
 
 
-# Font = "drpepper"
+# "drpepper"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="drpepper")
+figlet(message, font="drpepper")
 ```
 
 
 
-# Font = "eftifont"
+# "eftifont"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="eftifont")
+figlet(message, font="eftifont")
 ```
 
 
 
-# Font = "eftipiti"
+# "eftipiti"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="eftipiti")
+figlet(message, font="eftipiti")
 ```
 
 
 
-# Font = "eftirobot"
+# "eftirobot"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="eftirobot")
+figlet(message, font="eftirobot")
 ```
 
 
 
-# Font = "eftitalic"
+# "eftitalic"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="eftitalic")
+figlet(message, font="eftitalic")
 ```
 
 
 
-# Font = "eftiwall"
+# "eftiwall"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="eftiwall")
+figlet(message, font="eftiwall")
 ```
 
 
 
-# Font = "epic"
+# "epic"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="epic")
+figlet(message, font="epic")
 ```
 
 
 
-# Font = "fender"
+# "fender"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="fender")
+figlet(message, font="fender")
 ```
 
 
 
-# Font = "fourtops"
+# "fourtops"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="fourtops")
+figlet(message, font="fourtops")
 ```
 
 
 
-# Font = "fraktur"
+# "fraktur"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="fraktur")
+figlet(message, font="fraktur")
 ```
 
 
 
-# Font = "fuzzy"
+# "fuzzy"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="fuzzy")
+figlet(message, font="fuzzy")
 ```
 
 
 
-# Font = "goofy"
+# "goofy"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="goofy")
+figlet(message, font="goofy")
 ```
 
 
 
-# Font = "gothic"
+# "gothic"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="gothic")
+figlet(message, font="gothic")
 ```
 
 
 
-# Font = "gradient"
+# "gradient"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="gradient")
+figlet(message, font="gradient")
 ```
 
 
 
-# Font = "graffiti"
+# "graffiti"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="graffiti")
+figlet(message, font="graffiti")
 ```
 
 
 
-# Font = "hex"
+# "hex"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="hex")
+figlet(message, font="hex")
 ```
 
 
 
-# Font = "hollywood"
+# "hollywood"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="hollywood")
+figlet(message, font="hollywood")
 ```
 
 
 
-# Font = "invita"
+# "invita"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="invita")
+figlet(message, font="invita")
 ```
 
 
 
-# Font = "isometric1"
+# "isometric1"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="isometric1")
+figlet(message, font="isometric1")
 ```
 
 
 
-# Font = "isometric2"
+# "isometric2"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="isometric2")
+figlet(message, font="isometric2")
 ```
 
 
 
-# Font = "isometric3"
+# "isometric3"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="isometric3")
+figlet(message, font="isometric3")
 ```
 
 
 
-# Font = "isometric4"
+# "isometric4"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="isometric4")
+figlet(message, font="isometric4")
 ```
 
 
 
-# Font = "italic"
+# "italic"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="italic")
+figlet(message, font="italic")
 ```
 
 
 
-# Font = "ivrit"
+# "ivrit"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="ivrit")
+figlet(message, font="ivrit")
 ```
 
 
 
-# Font = "jazmine"
+# "jazmine"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="jazmine")
+figlet(message, font="jazmine")
 ```
 
 
 
-# Font = "jerusalem"
+# "jerusalem"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="jerusalem")
+figlet(message, font="jerusalem")
 ```
 
 
 
-# Font = "katakana"
+# "katakana"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="katakana")
+figlet(message, font="katakana")
 ```
 
 
 
-# Font = "kban"
+# "kban"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="kban")
+figlet(message, font="kban")
 ```
 
 
 
-# Font = "keyboard"
+# "keyboard"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="keyboard")
+figlet(message, font="keyboard")
 ```
 
 
 
-# Font = "larry3d"
+# "larry3d"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="larry3d")
+figlet(message, font="larry3d")
 ```
 
 
 
-# Font = "lcd"
+# "lcd"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="lcd")
+figlet(message, font="lcd")
 ```
 
 
 
-# Font = "lean"
+# "lean"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="lean")
+figlet(message, font="lean")
 ```
 
 
 
-# Font = "linux"
+# "linux"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="linux")
+figlet(message, font="linux")
 ```
 
 
 
-# Font = "lockergnome"
+# "lockergnome"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="lockergnome")
+figlet(message, font="lockergnome")
 ```
 
 
 
-# Font = "madrid"
+# "madrid"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="madrid")
+figlet(message, font="madrid")
 ```
 
 
 
-# Font = "marquee"
+# "marquee"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="marquee")
+figlet(message, font="marquee")
 ```
 
 
 
-# Font = "mike"
+# "mike"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="mike")
+figlet(message, font="mike")
 ```
 
 
 
-# Font = "mini"
+# "mini"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="mini")
+figlet(message, font="mini")
 ```
 
 
 
-# Font = "mirror"
+# "mirror"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="mirror")
+figlet(message, font="mirror")
 ```
 
 
 
-# Font = "mnemonic"
+# "mnemonic"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="mnemonic")
+figlet(message, font="mnemonic")
 ```
 
 
 
-# Font = "morse"
+# "morse"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="morse")
+figlet(message, font="morse")
 ```
 
 
 
-# Font = "moscow"
+# "moscow"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="moscow")
+figlet(message, font="moscow")
 ```
 
 
 
-# Font = "nancyj-fancy"
+# "nancyj-fancy"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="nancyj-fancy")
+figlet(message, font="nancyj-fancy")
 ```
 
 
 
-# Font = "nancyj"
+# "nancyj"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="nancyj")
+figlet(message, font="nancyj")
 ```
 
 
 
-# Font = "nancyj-improved"
+# "nancyj-improved"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="nancyj-improved")
+figlet(message, font="nancyj-improved")
 ```
 
 
 
-# Font = "nancyj-underline"
+# "nancyj-underline"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="nancyj-underline")
+figlet(message, font="nancyj-underline")
 ```
 
 
 
-# Font = "nipples"
+# "nipples"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="nipples")
+figlet(message, font="nipples")
 ```
 
 
 
-# Font = "ntgreek"
+# "ntgreek"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="ntgreek")
+figlet(message, font="ntgreek")
 ```
 
 
 
-# Font = "o8"
+# "o8"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="o8")
+figlet(message, font="o8")
 ```
 
 
 
-# Font = "ogre"
+# "ogre"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="ogre")
+figlet(message, font="ogre")
 ```
 
 
 
-# Font = "oldbanner"
+# "oldbanner"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="oldbanner")
+figlet(message, font="oldbanner")
 ```
 
 
 
-# Font = "os2"
+# "os2"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="os2")
+figlet(message, font="os2")
 ```
 
 
 
-# Font = "pawp"
+# "pawp"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="pawp")
+figlet(message, font="pawp")
 ```
 
 
 
-# Font = "peaks"
+# "peaks"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="peaks")
+figlet(message, font="peaks")
 ```
 
 
 
-# Font = "pebbles"
+# "pebbles"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="pebbles")
+figlet(message, font="pebbles")
 ```
 
 
 
-# Font = "pepper"
+# "pepper"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="pepper")
+figlet(message, font="pepper")
 ```
 
 
 
-# Font = "poison"
+# "poison"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="poison")
+figlet(message, font="poison")
 ```
 
 
 
-# Font = "puffy"
+# "puffy"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="puffy")
+figlet(message, font="puffy")
 ```
 
 
 
-# Font = "pyramid"
+# "pyramid"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="pyramid")
+figlet(message, font="pyramid")
 ```
 
 
 
-# Font = "rectangles"
+# "rectangles"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="rectangles")
+figlet(message, font="rectangles")
 ```
 
 
 
-# Font = "rev"
+# "rev"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="rev")
+figlet(message, font="rev")
 ```
 
 
 
-# Font = "roman"
+# "roman"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="roman")
+figlet(message, font="roman")
 ```
 
 
 
-# Font = "rot13"
+# "rot13"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="rot13")
+figlet(message, font="rot13")
 ```
 
 
 
-# Font = "rounded"
+# "rounded"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="rounded")
+figlet(message, font="rounded")
 ```
 
 
 
-# Font = "rowancap"
+# "rowancap"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="rowancap")
+figlet(message, font="rowancap")
 ```
 
 
 
-# Font = "rozzo"
+# "rozzo"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="rozzo")
+figlet(message, font="rozzo")
 ```
 
 
 
-# Font = "runic"
+# "runic"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="runic")
+figlet(message, font="runic")
 ```
 
 
 
-# Font = "sblood"
+# "sblood"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="sblood")
+figlet(message, font="sblood")
 ```
 
 
 
-# Font = "script"
+# "script"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="script")
+figlet(message, font="script")
 ```
 
 
 
-# Font = "serifcap"
+# "serifcap"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="serifcap")
+figlet(message, font="serifcap")
 ```
 
 
 
-# Font = "shadow"
+# "shadow"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="shadow")
+figlet(message, font="shadow")
 ```
 
 
 
-# Font = "shimrod"
+# "shimrod"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="shimrod")
+figlet(message, font="shimrod")
 ```
 
 
 
-# Font = "short"
+# "short"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="short")
+figlet(message, font="short")
 ```
 
 
 
-# Font = "slant"
+# "slant"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="slant")
+figlet(message, font="slant")
 ```
 
 
 
-# Font = "slide"
+# "slide"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="slide")
+figlet(message, font="slide")
 ```
 
 
 
-# Font = "slscript"
+# "slscript"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="slscript")
+figlet(message, font="slscript")
 ```
 
 
 
-# Font = "small"
+# "small"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="small")
+figlet(message, font="small")
 ```
 
 
 
-# Font = "smisome1"
+# "smisome1"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="smisome1")
+figlet(message, font="smisome1")
 ```
 
 
 
-# Font = "smkeyboard"
+# "smkeyboard"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="smkeyboard")
+figlet(message, font="smkeyboard")
 ```
 
 
 
-# Font = "smpoison"
+# "smpoison"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="smpoison")
+figlet(message, font="smpoison")
 ```
 
 
 
-# Font = "smscript"
+# "smscript"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="smscript")
+figlet(message, font="smscript")
 ```
 
 
 
-# Font = "smshadow"
+# "smshadow"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="smshadow")
+figlet(message, font="smshadow")
 ```
 
 
 
-# Font = "smslant"
+# "smslant"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="smslant")
+figlet(message, font="smslant")
 ```
 
 
 
-# Font = "speed"
+# "speed"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="speed")
+figlet(message, font="speed")
 ```
 
 
 
-# Font = "s-relief"
+# "s-relief"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="s-relief")
+figlet(message, font="s-relief")
 ```
 
 
 
-# Font = "stacey"
+# "stacey"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="stacey")
+figlet(message, font="stacey")
 ```
 
 
 
-# Font = "stampatello"
+# "stampatello"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="stampatello")
+figlet(message, font="stampatello")
 ```
 
 
 
-# Font = "standard"
+# "standard"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="standard")
+figlet(message, font="standard")
 ```
 
 
 
-# Font = "starwars"
+# "starwars"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="starwars")
+figlet(message, font="starwars")
 ```
 
 
 
-# Font = "stellar"
+# "stellar"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="stellar")
+figlet(message, font="stellar")
 ```
 
 
 
-# Font = "stop"
+# "stop"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="stop")
+figlet(message, font="stop")
 ```
 
 
 
-# Font = "straight"
+# "straight"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="straight")
+figlet(message, font="straight")
 ```
 
 
 
-# Font = "tanja"
+# "tanja"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="tanja")
+figlet(message, font="tanja")
 ```
 
 
 
-# Font = "term"
+# "term"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="term")
+figlet(message, font="term")
 ```
 
 
 
-# Font = "thick"
+# "thick"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="thick")
+figlet(message, font="thick")
 ```
 
 
 
-# Font = "thin"
+# "thin"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="thin")
+figlet(message, font="thin")
 ```
 
 
 
-# Font = "threepoint"
+# "threepoint"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="threepoint")
+figlet(message, font="threepoint")
 ```
 
 
 
-# Font = "ticks"
+# "ticks"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="ticks")
+figlet(message, font="ticks")
 ```
 
 
 
-# Font = "ticksslant"
+# "ticksslant"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="ticksslant")
+figlet(message, font="ticksslant")
 ```
 
 
 
-# Font = "tiles"
+# "tiles"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="tiles")
+figlet(message, font="tiles")
 ```
 
 
 
-# Font = "tinker-toy"
+# "tinker-toy"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="tinker-toy")
+figlet(message, font="tinker-toy")
 ```
 
 
 
-# Font = "tombstone"
+# "tombstone"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="tombstone")
+figlet(message, font="tombstone")
 ```
 
 
 
-# Font = "trek"
+# "trek"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="trek")
+figlet(message, font="trek")
 ```
 
 
 
-# Font = "tubular"
+# "tubular"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="tubular")
+figlet(message, font="tubular")
 ```
 
 
 
-# Font = "twopoint"
+# "twopoint"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="twopoint")
+figlet(message, font="twopoint")
 ```
 
 
 
-# Font = "univers"
+# "univers"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="univers")
+figlet(message, font="univers")
 ```
 
 
 
-# Font = "usaflag"
+# "usaflag"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="usaflag")
+figlet(message, font="usaflag")
 ```
 
 
 
-# Font = "weird"
+# "weird"
 
 ```{r}
 library(Rfiglet)
 
-figlet("Gotta get drunk", font="weird")
+figlet(message, font="weird")
 ```
 
 
 
 
 <br><br><br>
-![Creative Commons License](cc.png "Creative Commons License")
+![Creative Commons License](include/cc.png "Creative Commons License")
 
 This work is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/)
 
