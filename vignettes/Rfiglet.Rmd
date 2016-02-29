@@ -34,6 +34,10 @@ header
 ```
 
 
+This work is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/)
+
+
+
 # Introduction
 
 [figlet](http://www.figlet.org/), which stands for "Frank, Ian, and Glenn's LETters", is a well-known terminal utility for generating ascii banners.  For example, in the terminal, you might do something like:
@@ -103,12 +107,3 @@ Note that this requires you have the shiny package available.
 Printing is handled by a highly modified version of the figlet command line utility.  If you know a thing or two about R calling C functions, have a look at the R source code for the `Rfiglet::figlet()` function for a laugh.
 
 The output is a "line-by-line" vector of strings (like the output of `readLines()`) cast as an S3 class `figlet`, which allows for fancy printing.
-
-
-
-
-
-<br><br><br>
-![Creative Commons License](include/cc.png "Creative Commons License")
-
-This work is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/)

@@ -20,18 +20,18 @@ cybermedium \tab cybersmall \tab diamond \tab digital \tab doh \cr
 doom \tab dotmatrix \tab double \tab drpepper \tab eftifont \cr 
 eftipiti \tab eftirobot \tab eftitalic \tab eftiwall \tab epic \cr 
 fender \tab fourtops \tab fraktur \tab fuzzy \tab goofy \cr 
-gothic \tab gradient \tab graffiti \tab hex \tab hollywood \cr 
+gothic \tab gradient \tab graffiti \tab hollywood \cr 
 invita \tab isometric1 \tab isometric2 \tab isometric3 \tab isometric4 \cr 
 italic \tab ivrit \tab jazmine \tab jerusalem \tab katakana \cr 
 kban \tab keyboard \tab larry3d \tab lcd \tab lean \cr 
 linux \tab lockergnome \tab madrid \tab marquee \tab mike \cr 
 mini \tab mirror \tab mnemonic \tab morse \tab moscow \cr 
-nancyj-fancy \tab nancyj \tab nancyj-improved \tab nancyj-underline \tab nipples \cr 
+nancyj-fancy \tab nancyj \tab nancyj-underline \tab nipples \cr 
 ntgreek \tab o8 \tab ogre \tab oldbanner \tab os2 \cr 
 pawp \tab peaks \tab pebbles \tab pepper \tab poison \cr 
 puffy \tab pyramid \tab rectangles \tab rev \tab roman \cr
 rot13 \tab rounded \tab rowancap \tab rozzo \tab runic \cr 
-sblood \tab script \tab serifcap \tab shadow \tab shimrod \cr 
+script \tab serifcap \tab shadow \tab shimrod \cr 
 short \tab slant \tab slide \tab slscript \tab small \cr 
 smisome1 \tab smkeyboard \tab smpoison \tab smscript \tab smshadow \cr 
 smslant \tab speed \tab s-relief \tab stacey \tab stampatello \cr 

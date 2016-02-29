@@ -30,6 +30,9 @@ message <- "An Example"
 # header
 ```
 
+This work is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/)
+
+
   
 # "3-d"
 
@@ -661,16 +664,6 @@ figlet(message, font="graffiti")
 
 
 
-# "hex"
-
-```{r}
-library(Rfiglet)
-
-figlet(message, font="hex")
-```
-
-
-
 # "hollywood"
 
 ```{r}
@@ -951,16 +944,6 @@ figlet(message, font="nancyj")
 
 
 
-# "nancyj-improved"
-
-```{r}
-library(Rfiglet)
-
-figlet(message, font="nancyj-improved")
-```
-
-
-
 # "nancyj-underline"
 
 ```{r}
@@ -1177,16 +1160,6 @@ figlet(message, font="rozzo")
 library(Rfiglet)
 
 figlet(message, font="runic")
-```
-
-
-
-# "sblood"
-
-```{r}
-library(Rfiglet)
-
-figlet(message, font="sblood")
 ```
 
 
@@ -1588,12 +1561,3 @@ library(Rfiglet)
 
 figlet(message, font="weird")
 ```
-
-
-
-
-<br><br><br>
-![Creative Commons License](include/cc.png "Creative Commons License")
-
-This work is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/)
-
